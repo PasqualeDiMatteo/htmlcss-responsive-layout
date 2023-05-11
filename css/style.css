@@ -26,7 +26,7 @@ img{
 }
 
 h2{
-    color: #0084fd
+    font-size: 40px;
 }
 
 h3{
@@ -38,8 +38,17 @@ h4{
     font-size: 30px;
 }
 
+h5{
+    color: #0084fd;
+    font-size: 24px;
+}
+
+h6{
+    font-size: 20px;
+}
+
+
 p{
-    font-weight: 600;
     line-height: 25px;
 }
 
@@ -107,14 +116,38 @@ header .navbar{
     background-color:#b5ddff;
 }
 
+#app p{
+    font-weight: 600;
+}
+
 #planning .card{
     background-color:#ffffff;
     text-align: center;
     border-radius: 50px;
 }
+#planning .card p {
+    font-style: italic;
+}
 
 .col img{
     width: 100%;
+}
+
+#testimonials img {
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    object-fit: cover;
+    padding: 30px;
+}
+
+#testimonials .card {
+    border-radius: 40px;
+    padding: 20px 10px;
+    color: white;
+}
+#testimonials p {
+    font-size: 20px;
+    line-height: 30px;
 }
 
 /* Utilities */
@@ -166,6 +199,9 @@ header .navbar{
     color: white;
 }
 
+.color-purple{
+    color: #9792e4;
+}
 
 
 
@@ -208,6 +244,15 @@ header .navbar{
         justify-content: flex-start;
     }
 
+    #testimonials .card{
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    #testimonials img {
+        width: 20%;
+    }
 }
 
 /* 992px */
@@ -254,9 +299,6 @@ header .navbar{
         align-self: flex-end;
     }
 
-    #work-with-us .col{
-        flex-basis: calc(100% / 3);
-    }
 }
 
 
