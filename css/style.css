@@ -52,6 +52,8 @@ p{
     padding: 10px 50px;
     border-radius: 20px;
     display: inline-block;
+    letter-spacing: 3px;
+    font-weight: 600;
 }
 
 /* Header */
@@ -77,16 +79,16 @@ header .navbar{
 .card{
     background-color:#b5ddff;
     border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+    padding-top: 20px;
+
 }
 
-.card .card-right img{
+.card-right img{
     width: 200px;
 }
-
-.card-left{
-    padding: 20px 50px;
-}
-
 
 /* Utilities */
 
@@ -97,7 +99,10 @@ header .navbar{
 .mg-r-10{
     margin-right: 10px;
 }
-
+.p-bott-20{
+    padding-bottom: 20px;
+}
+    
 .mg-b-20{
     margin-bottom: 20px;
 }
@@ -135,8 +140,29 @@ header .navbar{
 
 @media screen and (min-width: 768px){
     .container{
-        max-width: 720px;
+        max-width: 730px;
     }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+
+    .col{
+        flex-basis: calc(100% / 3);
+        padding: 10px;
+        flex-shrink: 0;
+    }
+
+    .col-large{
+        flex-basis:calc(100% / 3 * 2) ;
+    }
+
+    .card-right{
+        justify-content: flex-start;
+    }
+
 }
 
 @media screen and (min-width: 992px){
@@ -150,6 +176,15 @@ header .navbar{
     }
     .fa-bars{
         display: none;
+    }
+    .card{
+        display: flex;
+    }
+    .card-right img{
+      width: 250px;
+    }
+    .btn-main{
+        margin-bottom: 50px;
     }
 }
 
