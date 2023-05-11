@@ -5,7 +5,7 @@
 }
 
 .container{
-    max-width: 400px;
+    max-width: 350px;
     margin: 0 auto;
 }
 
@@ -25,17 +25,33 @@ img{
     display: block;
 }
 
+h2{
+    color: #0084fd
+}
+
+p{
+    font-weight: 600;
+    line-height: 25px;
+}
+
 /* Btn */
 
 .btn{
     padding: 10px 20px;
-    
     border-radius: 20px;
 }
 
 .btn-header{
     background-color: white;
     color: black;
+}
+
+.btn-main{
+    background-color: #0084fd;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 20px;
+    display: inline-block;
 }
 
 /* Header */
@@ -56,12 +72,54 @@ header .navbar{
     display: none;
 }
 
+/* Main */
+
+.card{
+    background-color:#b5ddff;
+    border-radius: 20px;
+}
+
+.card .card-right img{
+    width: 200px;
+}
+
+.card-left{
+    padding: 20px 50px;
+}
+
 
 /* Utilities */
 
 .d-flex{
     display: flex;
 }
+
+.mg-r-10{
+    margin-right: 10px;
+}
+
+.mg-b-20{
+    margin-bottom: 20px;
+}
+.mg-b-50{
+    margin-bottom: 50px;
+}
+
+.grid-white{
+    background-color: white;
+    padding: 50px 0;
+}
+
+.jus-center{
+    justify-content: center;
+}
+
+.color-grey{
+    color: #5d7284;
+}
+
+
+
 
 /* Responsive */
 
