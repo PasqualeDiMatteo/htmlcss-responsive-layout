@@ -29,9 +29,27 @@ h2{
     color: #0084fd
 }
 
+h3{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+h4{
+    font-size: 30px;
+}
+
 p{
     font-weight: 600;
     line-height: 25px;
+}
+
+.fa-arrow-down{
+    color: rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    background-color:#9792e4 ;
+    border-radius: 50%;
+    line-height: 50px;
 }
 
 /* Btn */
@@ -77,7 +95,6 @@ header .navbar{
 /* Main */
 
 .card{
-    background-color:#b5ddff;
     border-radius: 20px;
     width: 100%;
     height: 100%;
@@ -86,8 +103,18 @@ header .navbar{
 
 }
 
-.card-right img{
-    width: 200px;
+#app .card{
+    background-color:#b5ddff;
+}
+
+#planning .card{
+    background-color:#ffffff;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.col img{
+    width: 100%;
 }
 
 /* Utilities */
@@ -102,12 +129,20 @@ header .navbar{
 .p-bott-20{
     padding-bottom: 20px;
 }
-    
+
+.p-top-50{
+    padding-top: 50px;
+}
+
 .mg-b-20{
     margin-bottom: 20px;
 }
 .mg-b-50{
     margin-bottom: 50px;
+}
+
+.grid-purple{
+    background-color: #9792e4;
 }
 
 .grid-white{
@@ -127,43 +162,55 @@ header .navbar{
     color: #5d7284;
 }
 
+.color-white{
+    color: white;
+}
+
 
 
 
 /* Responsive */
 
+
+/* 576px */
 @media screen and (min-width: 576px){
     .container{
         max-width: 540px;
     }
 }
 
+/* 768px */
+
 @media screen and (min-width: 768px){
     .container{
         max-width: 730px;
     }
 
-    .row{
+    #app .row{
         display: flex;
         flex-wrap: wrap;
         margin: 0 -10px;
     }
 
-    .col{
+    #app .col{
         flex-basis: calc(100% / 3);
         padding: 10px;
         flex-shrink: 0;
     }
-
-    .col-large{
+    #app .card-right img{
+        width: 200px;
+    }
+    #app .col-large{
         flex-basis:calc(100% / 3 * 2) ;
     }
 
-    .card-right{
+    #app .card-right{
         justify-content: flex-start;
     }
 
 }
+
+/* 992px */
 
 @media screen and (min-width: 992px){
     .container{
@@ -177,16 +224,43 @@ header .navbar{
     .fa-bars{
         display: none;
     }
-    .card{
+    #app .card{
         display: flex;
     }
-    .card-right img{
+    #app .card-right img{
       width: 250px;
     }
-    .btn-main{
+    #app .btn-main{
         margin-bottom: 50px;
     }
+
+    #planning .row{
+        display: flex;
+        justify-content: center;        
+    }
+
+    #planning .col{
+        flex-basis: 50%;
+        padding: 0 50px;
+    }
+    
+    #planning .card{
+        min-width: 400px;
+    }
+
+    #planning .col:last-of-type{
+        flex-basis: 35%;
+        height: 20%;
+        align-self: flex-end;
+    }
+
+    #work-with-us .col{
+        flex-basis: calc(100% / 3);
+    }
 }
+
+
+/* 1200px */
 
 @media screen and (min-width: 1200px){
     .container{
