@@ -11,6 +11,7 @@
 
 body{
     font-family: 'PT Sans', sans-serif;
+    padding-top: 80px;
 }
 
 /* Generic */ 
@@ -88,7 +89,11 @@ p{
 header{
     height: 80px;
     background-color: #0084fd;
-    
+    position:fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
 
 header .navbar{
